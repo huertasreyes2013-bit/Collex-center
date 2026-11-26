@@ -64,7 +64,7 @@ function draw(){
   var gn=a.g.replace('PSA ','');var top=a.slab?'<div class="ph slab"><div class="lb"><span class="gl">'+(GN[gn]||'GRADED')+'<i>PSA</i></span><b>'+esc(gn)+'</b></div><div class="im">'+im+'</div>'+(a.c>1?'<span class="x" style="top:auto;bottom:10px">x'+a.c+'</span>':'')+'</div>':'<div class="ph">'+im+'<span class="bd">'+esc(a.g)+'</span>'+(a.c>1?'<span class="x">x'+a.c+'</span>':'')+'</div>';
   return '<div class="it">'+top+
   '<div class="tx"><div class="nm">'+esc(a.n)+'</div><div class="st">'+esc(a.s)+(a.num?' · '+esc(a.num):'')+(a.v?' · '+esc(a.v):'')+'</div>'+
-  '<div class="pr">$'+a.p.toLocaleString('en-US')+' <small>mercado</small></div></div></div>'}).join('');
+  '<div class="pr">$'+a.p.toLocaleString('en-US')+'</div></div></div>'}).join('');
  document.getElementById('g').innerHTML=h||'<div class="empty" style="grid-column:1/-1">Sin resultados</div>'}
 draw();
 </script></body></html>
